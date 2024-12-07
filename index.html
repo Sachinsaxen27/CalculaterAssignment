@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Calculater</h1>
+        <div class="calculaterouterbody">
+            <div class="calculaterdisplay">
+                <input type="text" id="outputdisplay" readonly placeholder="0"  >
+            </div>
+            <div class="calculaterbuttonbody">
+                <div class="linebutton">
+                    <div onclick="handleinputnumber('7')"><button>7</button></div>
+                    <div onclick="handleinputnumber('8')"><button>8</button></div>
+                    <div onclick="handleinputnumber('9')"><button>9</button></div>
+                    <div onclick="handleinputnumber('')"><button>DEL</button></div>
+                </div>
+                <div class="linebutton">
+                    <div onclick="handleinputnumber('4')"><button>4</button></div>
+                    <div onclick="handleinputnumber('5')"><button>5</button></div>
+                    <div onclick="handleinputnumber('6')"><button>6</button></div>
+                    <div onclick="handleinputnumber('+')"><button>+</button></div>
+                </div>
+                <div class="linebutton">
+                    <div onclick="handleinputnumber('1')"><button>1</button></div>
+                    <div onclick="handleinputnumber('2')"><button>2</button></div>
+                    <div onclick="handleinputnumber('3')"><button>3</button></div>
+                    <div onclick="handleinputnumber('-')"><button>-</button></div>
+                </div>
+                <div class="linebutton">
+                    <div onclick="handleinputnumber('.')"><button>.</button></div>
+                    <div onclick="handleinputnumber('0')"><button>0</button></div>
+                    <div onclick="handleinputnumber('/')"><button>/</button></div>
+                    <div onclick="handleinputnumber('*')"><button>X</button></div>
+                </div>
+                <div class="linebutton">
+                    <div onclick="calculate(outputdisplay.value='')"><button>Reset</button></div>
+                    <div onclick="calculate(outputdisplay.value)"><button>=</button></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
